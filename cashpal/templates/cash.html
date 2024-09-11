@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayApp</title>
+    <style>
+        /* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f4f8;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #0073e6;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+header {
+    background: #0073e6;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: 600;
+}
+
+#hero {
+    background-image: url('https://via.placeholder.com/1200x600');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#hero .btn {
+    background: white;
+    color: #0073e6;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#services .service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#services .service {
+    width: 22%;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#services .service img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+#services .service h3 {
+    margin: 10px 0;
+}
+
+#services .service p {
+    margin: 10px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+#wallet {
+    padding: 50px 0;
+    background: #e9f2fb;
+    text-align: center;
+}
+
+#wallet .wallet-balance {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#wallet .wallet-balance h3 {
+    margin: 0 0 10px;
+}
+
+#wallet .transaction-history {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#wallet .transaction-history ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #555;
+}
+
+#wallet .transaction-history ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#wallet .transaction-history ul li:last-child {
+    border-bottom: none;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>PayApp</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#wallet">Wallet</a></li>
+                    <li><a href="#offers">Offers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to PayApp</h2>
+            <p>Pay bills, recharge, book tickets, and more in just a few taps.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-list">
+                <div class="service">
+                    <img src="https://via.placeholder.com/100" alt="Recharge">
+                    <h3>Mobile Recharge</h3>
+                    <p>Instant recharge for your mobile, DTH, and more.</p>
+                </div>
+                <div class="service">
+                    <img src="https://via.placeholder.com/100" alt="Bill Payment">
+                    <h3>Bill Payments</h3>
+                    <p>Pay electricity, water, and other utility bills.</p>
+                </div>
+                <div class="service">
+                    <img src="https://via.placeholder.com/100" alt="Tickets">
+                    <h3>Book Tickets</h3>
+                    <p>Book bus, train, and flight tickets at your convenience.</p>
+                </div>
+                <div class="service">
+                    <img src="https://via.placeholder.com/100" alt="Shopping">
+                    <h3>Online Shopping</h3>
+                    <p>Shop from your favorite brands at the best prices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="wallet">
+        <div class="container">
+            <h2>Your Wallet</h2>
+            <div class="wallet-balance">
+                <h3>Balance: $500</h3>
+                <a href="#" class="btn">Add Money</a>
+            </div>
+            <div class="transaction-history">
+                <h3>Recent Transactions</h3>
+                <ul>
+                    <li>Recharge: -$50</li>
+                    <li>Bill Payment: -$100</li>
+                    <li>Shopping: -$150</li>
+                    <li>Ticket Booking: -$200</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 PayApp. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
